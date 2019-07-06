@@ -5,6 +5,7 @@
       <title>Wharton</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="./index.css">
+      <script scr="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.1.1/iframeResizer.min.js"></script>
   </head>
   <body>
     <header>
@@ -12,7 +13,16 @@
     </header>
     <main>
       <!-- Insert embeddable code here -->
-      <div id='emeritus-iframe-8'><script>var a = document.createElement('iframe');a.src = 'https://enrollment-engine-pr-333.herokuapp.com/iframes/custom_forms/8/custom_form_entries/new' + window.location.search;document.getElementById('emeritus-iframe-8').appendChild(a);</script></div>
+      <style>
+        iframe {
+          width: 1px;
+          min-width: 100%;
+        }
+      </style>
+      <div id='emeritus-iframe-8'><script>var a = document.createElement('iframe');a.src = 'https://enrollment-engine.herokuapp.com/iframes/custom_forms/8/custom_form_entries/new' + window.location.search;document.getElementById('emeritus-iframe-8').appendChild(a);</script></div>
+      <script>
+        iFrameResize({ log: true }, '#myIframe');
+      </script>
     </main>
   </body>
 </html>
