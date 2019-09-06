@@ -19,11 +19,13 @@
           min-width: 100%;
         }
       </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.1.1/iframeResizer.min.js"></script><div id='emeritus-iframe-10'><script>var a = document.createElement('iframe');a.src = 'https://enrollment-engine-staging.herokuapp.com/iframes/custom_forms/10/custom_form_entries/new' + window.location.search;a.id = 'lead-form-iframe';a.style.minWidth = '100%';a.style.width = '1px';a.style.border = '0';a.onload = () => iFrameResize({}, '#lead-form-iframe');document.getElementById('emeritus-iframe-10').appendChild(a);</script></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.1.1/iframeResizer.min.js"></script><div id='emeritus-iframe-12'><script>var a = document.createElement('iframe');a.src = 'https://enrollment-engine-staging.herokuapp.com/iframes/custom_forms/12/custom_form_entries/new' + window.location.search;a.id = 'lead-form-iframe';a.style.minWidth = '100%';a.style.width = '1px';a.style.border = '0';a.onload = function () {return iFrameResize({}, '#lead-form-iframe');};document.getElementById('emeritus-iframe-12').appendChild(a);</script></div>
 <script>
-  window.addEventListener('message', (e) => { if (e.data === 'submit' && e.origin === 'https://enrollment-engine-staging.herokuapp.com') {
-    // fill in with code to run on form submit
-  }});
+  window.addEventListener('message', function (e) {
+    if (e.data === 'submit' && e.origin === 'https://enrollment-engine-staging.herokuapp.com') {
+      // fill in with code to run on form submit
+    }
+  });
 </script>
 
     </main>
